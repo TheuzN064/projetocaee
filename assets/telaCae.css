@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.lista {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.4s;
+    position: absolute;
+    bottom: 1px;
+    /* Posiciona a seta na parte inferior da div */
+    left: 5px;
+    /* Posiciona a seta no canto esquerdo */
+}
+
+.arrow:hover {
+    color: #000;
+}
+
+.table-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.show-table .table-container {
+    max-height: 500px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.btn-alterar {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-alterar:hover {
+    background-color: #e0a800;
+}
+
+.btn-excluir:hover {
+    background-color: #c82333;
+}
